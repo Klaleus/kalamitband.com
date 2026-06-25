@@ -4,3 +4,146 @@
     margin: 0;
     padding: 0;
 }
+
+html
+{
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+body
+{
+    align-items: center;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    max-width: 960px;
+}
+
+img
+{
+    height: auto;
+    width: 100%;
+}
+
+header
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section
+{
+    align-items: center;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    color: royalblue;
+}
+
+a[target="_blank"]::after
+{
+    content: " ↗";
+}
+
+details
+{
+    display: flex;
+    flex-direction: column;
+}
+
+details[open]
+{
+    gap: 1rem;
+}
+
+summary
+{
+    color: royalblue;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer
+{
+    color: gray;
+    padding-bottom: 1rem;
+}
+
+.restrict-max-width
+{
+    max-width: 400px;
+}
+
+@media (max-width: calc(400px + 2rem))
+{
+    .pad-text
+    {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+#banner
+{
+    border-bottom: 1px solid gray;
+}
+
+#about-list dt
+{
+    color: yellow;
+    text-align: center;
+}
+
+#about-list dd + dt
+{
+    margin-top: 1rem;
+}
+
+.show-list
+{
+    text-align: center;
+}
+
+.show-list li
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.show-list li + li
+{
+    margin-top: 1rem;
+}
+
+#song-list
+{
+    text-align: center;
+}
+
+#song-list dt
+{
+    color: yellow;
+}
+
+#song-list dd + dt
+{
+    margin-top: 1rem;
+}
