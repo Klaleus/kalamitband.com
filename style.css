@@ -25,6 +25,20 @@ body
     max-width: 960px;
 }
 
+@media (max-width: 960px)
+{
+    body
+    {
+        border-left: none;
+        border-right: none;
+    }
+}
+
+h2
+{
+    text-align: center;
+}
+
 img
 {
     height: auto;
@@ -45,7 +59,7 @@ section
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 ul
@@ -56,11 +70,6 @@ ul
 a
 {
     color: royalblue;
-}
-
-a[target="_blank"]::after
-{
-    content: " ↗";
 }
 
 details
