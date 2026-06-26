@@ -41,7 +41,14 @@
     </head>
     <body>
         <header class="restrict-max-width">
-            <img id="banner" src="images/KALAMIT̄ Banner - White on Black.png" alt="KALAMIT̄" width="3600" height="2025">
+            <img
+                id="banner"
+                srcset="images/banner-400.png 400w, images/banner-640.png 640w, images/banner-960.png 960w"
+                sizes="(max-width: 400px) 400px, (max-width: 640px) 640px, 960px"
+                src="images/banner-960.png"
+                alt="KALAMIT̄"
+                width="960"
+                height="540">
         </header>
         <nav id="main-nav">
             <a href="#about">About</a>
@@ -76,7 +83,7 @@
                     </dd>
                 </dl>
             </details>
-            <img src="images/Group Photo 1 of 2.jpg" alt="Group photo" width="2048" height="1536">
+            <img src="images/Group Photo 1 of 2.jpg" alt="Group photo" width="2048" height="1536" loading="lazy">
         </section>
         <section class="restrict-max-width pad-text">
             <header>
