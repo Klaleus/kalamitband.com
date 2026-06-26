@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
         <title>KALAMIT̄ Homepage</title>
     </head>
     <body>
@@ -21,11 +22,11 @@
                     <dt>Who are we?</dt>
                     <dd>We are KALAMIT̄, a rock band out of central Illinois. It's pronounced "Calamity", with optional emphasis on the "T" sound. The "K" is for Kowalski and the "T" is for Tonarelli, the last names of our members. </dd>
                     <dt>What kind of music do we play?</dt>
-                    <dd>We focus mostly on 1970s - 2000s rock and its adjacent genres, but we try to include a variety of genres in our repertoire.</dd>
+                    <dd>We focus mostly on 1970s - 2000s rock and its adjacent genres, but we try to include a variety of genres in our repertoire. See our <a href="#requests">song list</a> for examples.</dd>
                     <dt>Are we any good?</dt>
                     <dd>To hesitant audiences: come see us and find out! To cautious venues: let's schedule something, you won't regret it!</dd>
                     <dt>How long have we been playing?</dt>
-                    <dd>Our debut show was in November 2025. See our <a href="#shows">past shows</a> to get a better sense of our experience.</dd>
+                    <dd>Our debut show was in November 2025. See our <a href="#shows">past shows</a> to get a better sense.</dd>
                     <dt>Who's in our band?</dt>
                     <dd>
                         Klayton Kowalski: Lead Vocalist & Rhythm Guitarist<br>
@@ -53,8 +54,8 @@
             </header>
             <p>This list is updated frequently. You can trust that it's correct and up to date. Every show is an exciting opportunity for us to have some fun and improve our skills.</p>
             <details>
-                <summary>Upcoming Shows</summary>
-                <ul class="show-list">
+                <summary id="upcoming-shows-summary">Upcoming Shows</summary>
+                <ul id="upcoming-shows" class="show-list">
                     <li>
                         <span>6/26/26, Friday, 8:00 - 11:00 PM</span>
                         <span>The Grove, Troy Grove, IL</span>
@@ -82,8 +83,8 @@
                 </ul>
             </details>
             <details>
-                <summary>Past Shows</summary>
-                <ul class="show-list">
+                <summary id="past-shows-summary">Past Shows</summary>
+                <ul id="past-shows" class="show-list">
                     <li>
                         <span>6/20/26, Saturday, 4:00 - 7:00 PM</span>
                         <span>South Shore Boat Club, Peru, IL</span>
@@ -137,7 +138,7 @@
             </header>
             <p>Come up and tell us what you want to hear! We'll try to fit it into our setlist. If we don't know it, then we'll consider learning it.</p>
             <details>
-                <summary>Song List</summary>
+                <summary id="song-list-summary">Song List</summary>
                 <dl id="song-list">
                     <dt>Alive</dt>
                     <dd>Pearl Jam</dd>
@@ -235,6 +236,10 @@
                 <h2 id="photos" class="pad-text">Let's take a trip down memory lane...</h2>
             </header>
             <p class="restrict-max-width pad-text">This is a comprehensive photo gallery from our shows. Click on one for more information.</p>
+            <details>
+                <summary>Photo Gallery</summary>
+                <p><i>Under construction...</i></p>
+            </details>
         </section>
         <footer class="restrict-max-width pad-text">
             <p>© 2026 Klayton Kowalski</p>
