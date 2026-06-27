@@ -1,23 +1,70 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+        <meta name="description" content="Let's rock let's rock today! KALAMIT̄ is a rock band from central Illinois. Book us for your venue or check out our upcoming shows.">
+        <meta name="keywords" content="rock band, central Illinois, live music, cover band, KALAMIT, Kowalski, Tonarelli">
+        <meta property="og:title" content="KALAMIT̄ | Rock Band from Central Illinois">
+        <meta property="og:description" content="Let's rock let's rock today! KALAMIT̄ is a rock band from central Illinois. Book us for your venue or check out our upcoming shows.">
+        <meta property="og:image" content="https://kalamitband.com/images/KALAMIT̄ Banner - White on Black.png">
+        <meta property="og:url" content="https://kalamitband.com">
+        <meta property="og:type" content="website">
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
-        <title>KALAMIT̄ Homepage</title>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "MusicGroup",
+            "name": "KALAMIT̄",
+            "url": "https://kalamitband.com",
+            "description": "Let's rock let's rock today! KALAMIT̄ is a rock band from central Illinois, playing 1970s–2000s rock and adjacent genres.",
+            "genre": ["Rock", "Classic Rock", "Alternative Rock"],
+            "email": "kalamitband@gmail.com",
+            "telephone": "+18158305566",
+            "member": [
+                { "@type": "OrganizationRole", "member": { "@type": "Person", "name": "Klayton Kowalski" }, "roleName": "Lead Vocalist, Rhythm Guitarist" },
+                { "@type": "OrganizationRole", "member": { "@type": "Person", "name": "Aiden Tonarelli" }, "roleName": "Lead Guitarist" },
+                { "@type": "OrganizationRole", "member": { "@type": "Person", "name": "Kage Kowalski" }, "roleName": "Bassist" },
+                { "@type": "OrganizationRole", "member": { "@type": "Person", "name": "Evan Tonarelli" }, "roleName": "Drummer" }
+            ],
+            "sameAs": [
+                "https://www.youtube.com/@kalamitband",
+                "https://www.facebook.com/kalamitband",
+                "https://www.instagram.com/kalamitband"
+            ]
+        }
+        </script>
+        <title>KALAMIT̄ | Rock Band from Central Illinois</title>
     </head>
     <body>
         <header class="restrict-max-width">
-            <img id="banner" src="images/KALAMIT̄ Banner - White on Black.png" alt="KALAMIT̄" width="3600" height="2025">
+            <img
+                id="banner"
+                srcset="images/banner-400.png 400w, images/banner-640.png 640w, images/banner-960.png 960w"
+                sizes="(max-width: 400px) 400px, (max-width: 640px) 640px, 960px"
+                src="images/banner-960.png"
+                alt="KALAMIT̄"
+                width="960"
+                height="540">
         </header>
+        <nav id="main-nav">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#shows">Shows</a>
+            <a href="#tips">Tips</a>
+            <a href="#socials">Socials</a>
+            <a href="#requests">Requests</a>
+            <a href="#photos">Photos</a>
+        </nav>
         <section class="restrict-max-width">
             <header>
                 <h2 id="about" class="pad-text"><q>Let's rock let's rock today!</q></h2>
             </header>
             <details class="pad-text">
-                <summary>Brief Introdution</summary>
+                <summary>Brief Introduction</summary>
                 <dl id="about-list">
                     <dt>Who are we?</dt>
                     <dd>We are KALAMIT̄, a rock band out of central Illinois. It's pronounced "Calamity", with optional emphasis on the "T" sound. The "K" is for Kowalski and the "T" is for Tonarelli, the last names of our members. </dd>
@@ -242,7 +289,8 @@
             </details>
         </section>
         <footer class="restrict-max-width pad-text">
-            <p>© 2026 Klayton Kowalski</p>
+            <p>© 2026 KALAMIT̄</p>
+            <p>Designed by Klayton Kowalski</p>
         </footer>
     </body>
 </html>
